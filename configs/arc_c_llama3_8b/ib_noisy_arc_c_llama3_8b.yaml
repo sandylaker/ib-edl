@@ -1,0 +1,11 @@
+_base_: ['./ib_arc_c_llama3_8b.yaml']
+
+data:
+    train:
+        noisy_level: 0.3
+
+vib:
+    beta: 0.000005
+
+train_cfg:
+    max_grad_norm: 10.0

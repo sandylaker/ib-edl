@@ -1,0 +1,29 @@
+exclude: ^workdirs/
+repos:
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+        args: ["--config", "setup.cfg"]
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+  - repo: https://github.com/google/yapf
+    rev: v0.40.2
+    hooks:
+      - id: yapf
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+      - id: check-yaml
+      - id: check-toml
+      - id: end-of-file-fixer
+      - id: double-quote-string-fixer
+      - id: requirements-txt-fixer
+      - id: check-merge-conflict
+      - id: fix-encoding-pragma
+        args: ["--remove"]
+      - id: mixed-line-ending
+        args: ["--fix=lf"]

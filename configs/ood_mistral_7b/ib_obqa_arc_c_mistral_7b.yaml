@@ -1,0 +1,16 @@
+_base_: ['../obqa_mistral_7b/ib_obqa_mistral_7b.yaml']
+
+model:
+    peft_path: ""
+
+data:
+    test:
+        type: ARCDataset
+        dataset_cfg:
+            split: test
+        name_suffix: "C"
+        add_space: True
+        subset_size: null
+
+process_preds:
+    npz_file: 'arc_c.npz'

@@ -1,0 +1,9 @@
+_base_: ['./ib_sciq_llama3_8b.yaml']
+
+data:
+    train:
+        noisy_level: 0.3
+
+vib:
+    # beta 5e-6
+    beta: 0.000005

@@ -1,0 +1,5 @@
+_base_: ['./ss_kl_arc_e_llama3_8b.yaml']
+
+data:
+    train:
+        noisy_level: 0.3

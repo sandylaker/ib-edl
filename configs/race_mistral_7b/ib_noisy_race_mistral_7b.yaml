@@ -1,0 +1,8 @@
+_base_: ['./ib_race_mistral_7b.yaml']
+
+data:
+    train:
+        noisy_level: 0.3
+
+vib:
+    beta: 0.000007

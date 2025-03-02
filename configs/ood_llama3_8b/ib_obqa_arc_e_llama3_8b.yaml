@@ -1,0 +1,19 @@
+_base_: ['../obqa_llama3_8b/ib_obqa_llama3_8b.yaml']
+
+model:
+    peft_path: ""
+
+data:
+    test:
+        type: ARCDataset
+        dataset_cfg:
+            split: test
+        name_suffix: "E"
+        add_space: True
+        subset_size: null
+
+process_preds:
+    npz_file: 'arc_e.npz'
+
+vib:
+    sigma_mult: 3.0

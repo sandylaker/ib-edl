@@ -1,0 +1,19 @@
+data:
+    train:
+        type: OBQADataset
+        dataset_cfg:
+            split: train
+        add_space: True
+        subset_size: null
+    val:
+        type: OBQADataset
+        dataset_cfg:
+            split: validation
+        add_space: True
+        subset_size: null
+    test:
+        type: OBQADataset
+        dataset_cfg:
+            split: test
+        add_space: True
+        subset_size: null

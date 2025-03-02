@@ -1,0 +1,12 @@
+_base_: ['../_base_/arc_e.yaml', '../_base_/llama2_7b.yaml', '../_base_/misc.yaml', '../_base_/edl_schedule.yaml']
+
+edl_loss_cfg:
+    bayesian_loss:
+        type: ss
+        smooth: 0.0
+    reg_loss:
+        type: kl
+        modify_alphas: True
+    reg_weight_cfg:
+        start_epoch: 0.1
+        final_reg_weight: 1.0

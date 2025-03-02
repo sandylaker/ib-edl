@@ -1,0 +1,20 @@
+data:
+    train:
+        type: CSQADataset
+        dataset_cfg:
+            split: train
+        add_space: True
+        subset_size: null
+    val:
+        type: CSQADataset
+        dataset_cfg:
+            split: validation
+        add_space: True
+        subset_size: null
+    test:
+        type: CSQADataset
+        dataset_cfg:
+            # CSQA test set has no labels, so we use the validation set for evaluation.
+            split: validation
+        add_space: True
+        subset_size: null

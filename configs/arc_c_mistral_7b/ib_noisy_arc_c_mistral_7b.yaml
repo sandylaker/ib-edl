@@ -1,0 +1,11 @@
+_base_: ['./ib_arc_c_mistral_7b.yaml']
+
+data:
+    train:
+        noisy_level: 0.3
+
+vib:
+    beta: 0.00001
+
+train_cfg:
+    max_grad_norm: 10.0

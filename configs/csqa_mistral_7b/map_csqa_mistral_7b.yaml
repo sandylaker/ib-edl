@@ -1,0 +1,4 @@
+_base_: ['../_base_/csqa.yaml', '../_base_/mistral_7b.yaml', '../_base_/misc.yaml', '../_base_/non_edl_schedule.yaml']
+
+train_cfg:
+    max_steps: 30000

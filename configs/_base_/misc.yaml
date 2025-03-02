@@ -1,0 +1,6 @@
+process_preds:
+    # npz_file being "null" means that the predictions will not be saved
+    npz_file: null
+    do_plot: False
+    plot_cfg:
+        plot_grid_size: [5, 5]

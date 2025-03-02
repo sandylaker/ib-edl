@@ -1,0 +1,22 @@
+data:
+    train:
+        type: ARCDataset
+        dataset_cfg:
+            split: train
+        name_suffix: "C"
+        add_space: True
+        subset_size: null
+    val:
+        type: ARCDataset
+        dataset_cfg:
+            split: validation
+        name_suffix: "C"
+        add_space: True
+        subset_size: null
+    test:
+        type: ARCDataset
+        dataset_cfg:
+            split: validation
+        name_suffix: "C"
+        add_space: True
+        subset_size: null

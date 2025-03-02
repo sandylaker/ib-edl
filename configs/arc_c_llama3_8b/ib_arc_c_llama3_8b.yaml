@@ -1,0 +1,19 @@
+_base_: ['../_base_/arc_c.yaml', '../_base_/llama3_8b.yaml', '../_base_/misc.yaml', '../_base_/edl_schedule.yaml']
+
+edl_loss_cfg:
+    bayesian_loss:
+        type: ss
+        smooth: null
+    # whatever reg_loss does not matter, as the weight is set to 0
+    reg_loss:
+        type: kl
+        modify_alphas: True
+    reg_weight_cfg:
+        start_epoch: 0.1
+        # VIB does not require additional regularization between Dirichlet(alpha_tilde) and Dirichlet(ones)
+        final_reg_weight: 0.0
+
+vib:
+    num_noises: 20
+    beta: 0.00009
+    sigma_mult: 0.0

@@ -1,0 +1,5 @@
+_base_: ['./ss_kl_obqa_mistral_7b.yaml']
+
+data:
+    train:
+        noisy_level: 0.3

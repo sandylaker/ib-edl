@@ -1,0 +1,4 @@
+_base_: ['../_base_/obqa.yaml', '../_base_/llama3_8b.yaml', '../_base_/misc.yaml', '../_base_/non_edl_schedule.yaml']
+
+process_preds:
+    npz_file: "obqa.npz"

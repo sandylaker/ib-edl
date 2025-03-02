@@ -1,0 +1,14 @@
+_base_: ['../obqa_llama2_7b/ib_obqa_llama2_7b.yaml']
+
+model:
+    peft_path: ""
+
+data:
+    test:
+        type: SciQDataset
+        dataset_cfg:
+            split: test
+        add_space: True
+
+process_preds:
+    npz_file: 'sciq.npz'

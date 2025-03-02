@@ -1,0 +1,16 @@
+data:
+    train:
+        type: SciQDataset
+        dataset_cfg:
+            split: train
+        add_space: True
+    val:
+        type: SciQDataset
+        dataset_cfg:
+            split: validation
+        add_space: True
+    test:
+        type: SciQDataset
+        dataset_cfg:
+            split: test
+        add_space: True

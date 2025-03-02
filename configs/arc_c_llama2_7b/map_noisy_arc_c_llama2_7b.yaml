@@ -1,0 +1,5 @@
+_base_: ['./map_arc_c_llama2_7b.yaml']
+
+data:
+    train:
+        noisy_level: 0.3

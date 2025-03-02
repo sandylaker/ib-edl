@@ -1,0 +1,18 @@
+train_cfg:
+    do_train: true
+    do_eval: true
+    eval_strategy: 'epoch'
+    per_device_train_batch_size: 4
+    per_device_eval_batch_size: 4
+    # lr 5e-5
+    learning_rate: 0.00005
+    # On several datasets like ARC-C, 0.0 is better than 1e-5 for the weight decay.
+    weight_decay: 0.0
+    max_steps: 10080
+    lr_scheduler_type: 'cosine'
+    warmup_steps: 20
+    logging_steps: 20
+    save_strategy: 'epoch'
+    save_total_limit: 1
+    save_only_model: true
+    bf16: true
